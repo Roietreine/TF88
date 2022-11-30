@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "261090730372",
+    "firebase_url": "https://projectsolaire-fefee-default-rtdb.firebaseio.com",
+    "project_id": "projectsolaire-fefee",
+    "storage_bucket": "projectsolaire-fefee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261090730372:android:aa32c707264755c5a2bdd1",
+        "android_client_info": {
+          "package_name": "papublish.plshehe.tf88"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261090730372-90keb0p43sr7gj1vici8eflka7ohe7vu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmOB_I1jCjoIf9kCM9iZkb3M1kP5gJN58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261090730372-90keb0p43sr7gj1vici8eflka7ohe7vu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261090730372:android:511fc63ab699ec14a2bdd1",
+        "android_client_info": {
+          "package_name": "wagmatermi.rushb.fb88secondupload"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261090730372-90keb0p43sr7gj1vici8eflka7ohe7vu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmOB_I1jCjoIf9kCM9iZkb3M1kP5gJN58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261090730372-90keb0p43sr7gj1vici8eflka7ohe7vu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

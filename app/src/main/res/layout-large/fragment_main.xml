@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/carousel_viewholder"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardCornerRadius="16dp"
+        android:id="@+id/home_button"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/purple_700"
+        android:layout_margin="16dp"
+        app:strokeWidth="2dp"
+        app:layout_constraintTop_toBottomOf="@id/carousel_viewholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/history_button"
+        app:strokeColor="@color/black">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded_win"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/home_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="24dp"
+                android:contentDescription="@null"
+                android:foreground="@drawable/ic_home"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sanspro_bold"
+                android:letterSpacing="0.1"
+                android:shadowColor="@color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/home"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:layout_constraintBottom_toBottomOf="@id/home_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/home_image"
+                app:layout_constraintTop_toTopOf="@id/home_image" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardCornerRadius="16dp"
+        android:id="@+id/history_button"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/purple_700"
+        android:layout_margin="16dp"
+        app:strokeWidth="2dp"
+        app:layout_constraintTop_toBottomOf="@id/home_button"
+        app:layout_constraintStart_toStartOf="@id/home_button"
+        app:layout_constraintEnd_toEndOf="@id/home_button"
+        app:layout_constraintBottom_toTopOf="@id/minigame_button"
+        app:strokeColor="@color/black">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:background="@drawable/rounded_win"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/history_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="24dp"
+                android:contentDescription="@null"
+                android:foreground="@drawable/ic_history"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/history_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sanspro_bold"
+                android:letterSpacing="0.1"
+                android:shadowColor="@color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/history"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:layout_constraintBottom_toBottomOf="@id/history_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/history_image"
+                app:layout_constraintTop_toTopOf="@id/history_image" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardCornerRadius="16dp"
+        android:id="@+id/minigame_button"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/purple_700"
+        android:layout_margin="16dp"
+        app:strokeWidth="2dp"
+        app:layout_constraintTop_toBottomOf="@id/history_button"
+        app:layout_constraintStart_toStartOf="@id/history_button"
+        app:layout_constraintEnd_toEndOf="@id/history_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:strokeColor="@color/black">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:background="@drawable/rounded_win"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/minigame_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="24dp"
+                android:contentDescription="@null"
+                android:foreground="@drawable/ic_videogame"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/minigame_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sanspro_bold"
+                android:letterSpacing="0.1"
+                android:shadowColor="@color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/mini_game"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:layout_constraintBottom_toBottomOf="@id/minigame_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/minigame_image"
+                app:layout_constraintTop_toTopOf="@id/minigame_image" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

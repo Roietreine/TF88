@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Tf88" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="CustomRatingStyle"
+        parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="android:scaleX">1.5</item>
+        <item name="android:scaleY">1.5</item>
+        <item name="backgroundTint">@color/gold</item>
+        <item name="android:progressBackgroundTint">@color/gold</item>
+    </style>
+
+    <style name="RoundedImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8%</item>
+    </style>
+
+    <style name="WrapParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WrapMatchParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchWrapParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextViewBoldStyle" parent="WrapParent">
+        <item name="android:textSize">20dp</item>
+        <item name="fontFamily">@font/sanspro_bold</item>
+    </style>
+
+    <style name="TextViewSemiBoldStyle" parent="WrapParent">
+        <item name="android:textSize">18dp</item>
+        <item name="fontFamily">@font/sanspro_semibold</item>
+    </style>
+
+    <style name="DialogRotationAnim">
+        <item name="android:windowEnterAnimation">@anim/anim_rotate</item>
+        <item name="android:windowExitAnimation">@anim/anim_rotate</item>
+
+    </style>
+
+
+
+</resources>
